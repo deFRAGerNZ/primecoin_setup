@@ -1,0 +1,20 @@
+clear
+echo "Enter your password for 'sudo' tasks that need to occur"
+read -s password
+echo -E "Than you! Continuing..."
+
+# First installing important make files
+
+echo $password | sudo -S tsocks apt-get install g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
+
+# Now cloning the miner
+
+echo $password | sudo -S tsocks git clone https://github.com/thbaumbach/primecoin.git
+
+# Changing directory to primeminer
+
+cd primeminer/src/
+
+# starting miner :-)
+
+tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=beeeeer.org -poolport=1337 -genproclimit=4
