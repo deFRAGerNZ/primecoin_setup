@@ -13,7 +13,11 @@ echo $password | sudo -S tsocks git clone https://github.com/thbaumbach/primecoi
 
 # Changing directory to primeminer
 
-cd primeminer/src/
+cd /$HOME/primeminer/src/
+
+# compiling
+
+echo $password | make -f makefile.unix primeminer
 
 # starting miner :-)
 
