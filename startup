@@ -17,7 +17,7 @@ cd /$HOME/primecoin/src
 
 # compiling
 
-echo $password | make -f makefile.unix primeminer
+echo $password |sudo -S make -f makefile.unix primeminer
 
 # starting miner :-)
 
