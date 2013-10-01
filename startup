@@ -5,7 +5,7 @@ echo -E "Than you! Continuing..."
 
 # First installing important make files
 
-echo $password | sudo -S tsocks apt-get install g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
+echo $password | sudo -S tsocks apt-get install -y g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
 
 # Now cloning the miner
 
@@ -17,7 +17,7 @@ cd /$HOME/primecoin/src
 
 # compiling
 
-echo $password |sudo -S make -f makefile.unix primeminer
+echo $password | sudo -S make -f makefile.unix primeminer
 
 # starting miner :-)
 
