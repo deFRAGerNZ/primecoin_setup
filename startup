@@ -13,7 +13,7 @@ echo $password | sudo -S tsocks git clone https://github.com/thbaumbach/primecoi
 
 # Changing directory to primeminer
 
-cd /$HOME/primeminer/src
+cd /$HOME/primecoin/src
 
 # compiling
 
