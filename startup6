@@ -21,4 +21,4 @@ echo $password | sudo -S make -f makefile.unix primeminer
 
 # starting miner :-)
 
-tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=beeeeer.org -poolport=1337 -genproclimit=6
+nohup tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=beeeeer.org -poolport=1337 -genproclimit=6 &
