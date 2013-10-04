@@ -3,6 +3,10 @@ echo "Enter your password for 'sudo' tasks that need to occur"
 read -s password
 echo -E "Than you! Continuing..."
 
+# Updating... :-( waste of time
+
+echo $password | sudo -S tsocks apt-get update
+
 # First installing important make files
 
 echo $password | sudo -S tsocks apt-get install -y g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
