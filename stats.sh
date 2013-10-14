@@ -1,7 +1,7 @@
 TODAY=`date +"%Y-%m-%d"`
 YD=`date +"%Y-%m-%d" --date="-1 day"`
 DB=`date +"%Y-%m-%d" --date="-2 day"`
-curl -s http://www.beeeeer.org/user/ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ | html2text >/tmp/statsfile
+curl -s tsocks http://www.beeeeer.org/user/ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ | html2text >/tmp/statsfile
 head -30 /tmp/statsfile
 echo ""
 echo -n "TOTAL XPM: `cat /tmp/statsfile | awk '{print $5}' | sed '/ ^ $ / d' | awk '{sum +=$1} END {printf (sum)} '`"
