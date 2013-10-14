@@ -1,4 +1,3 @@
-cat stats.sh 
 TODAY=`date +"%Y-%m-%d"`
 YD=`date +"%Y-%m-%d" --date="-1 day"`
 DB=`date +"%Y-%m-%d" --date="-2 day"`
