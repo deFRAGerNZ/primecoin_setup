@@ -9,7 +9,7 @@ echo $password | sudo -S tsocks apt-get update
 
 # First installing important make files
 
-echo $password | sudo -S tsocks apt-get install -y g++ build-essential libgmp-dev libssl-dev libdb4.8-dev libdb++-dev libboost1.48-dev libboost-timer1.48-dev libboost-chrono1.48-dev
+echo $password | sudo -S tsocks apt-get install -y g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev libboost-timer1.48-dev libboost-chrono1.48-dev
 
 # Now cloning the miner
 
