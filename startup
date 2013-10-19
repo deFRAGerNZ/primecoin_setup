@@ -13,7 +13,7 @@ echo $password | sudo -S tsocks apt-get install -y g++ libdb++-dev build-essenti
 
 # Now cloning the miner
 
-echo $password | sudo -S tsocks git clone https://github.com/deFRAGerNZ/primecoin.git
+echo $password | sudo -S tsocks git clone https://github.com/thbaumbach/primecoin
 
 # Changing directory to primeminer
 
