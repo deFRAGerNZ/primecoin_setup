@@ -17,7 +17,7 @@ echo $password | sudo -S tsocks git clone https://bitbucket.org/deFRAGerNZ/prime
 
 # Changing directory to primeminer
 
-cd /$HOME/primecoin/src
+cd /$HOME/primecoin-hp/src
 
 # compiling
 
