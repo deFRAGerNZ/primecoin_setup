@@ -25,4 +25,4 @@ echo $password | sudo -S make -f makefile.unix primeminer
 
 # starting miner :-)
 
-nohup tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=mine.coinspara.de -poolport=1337 -genproclimit=6 -poolpassword=helloworldtest &
+nohup tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=54.200.248.75 -poolport=1337 -genproclimit=6 -poolpassword=helloworldtest &
