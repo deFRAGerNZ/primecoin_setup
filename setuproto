@@ -1,0 +1,11 @@
+while true; do
+    clear
+    echo $(/root/_protoshares/protosharesd getmininginfo | grep 'blocks"')
+    echo $(/root/_protoshares/protosharesd getmininginfo | grep 'difficulty')
+    echo $(/root/_protoshares/protosharesd getmininginfo | grep 'hashespermin')
+    echo '=========='
+    /root/_protoshares/protosharesd listtransactions | grep 'category'
+    echo '=========='
+    echo $(/root/_protoshares/protosharesd getbalance)
+    sleep 5
+done
