@@ -1,19 +1,16 @@
-clear
-echo "Enter your password for 'sudo' tasks that need to occur"
-read -s password
-echo -E "Than you! Continuing..."
+read -p "Enter number of threads: " threads
 
 # Updating... :-( waste of time
 
-echo $password | sudo -S tsocks apt-get update
+sudo tsocks apt-get update
 
 # First installing important make files
 
-echo $password | sudo -S tsocks apt-get install -y g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
+sudo tsocks apt-get install -y g++ libboost-all-dev libdb++-dev build-essential libgmp-dev libssl-dev
 
 # Now cloning the miner
 
-echo $password | sudo -S tsocks git clone https://bitbucket.org/deFRAGerNZ/primecoin-hp.git
+sudo tsocks git clone https://bitbucket.org/deFRAGerNZ/primecoin-hp.git
 
 # Changing directory to primeminer
 
@@ -21,8 +18,8 @@ cd /$HOME/primecoin-hp/src
 
 # compiling
 
-echo $password | sudo -S make -f makefile.unix primeminer
+sudo make -f makefile.unix primeminer
 
 # starting miner :-)
 
-nohup tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=54.200.248.75 -poolport=1337 -genproclimit=4 -poolpassword=helloworldtest &
+tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=54.200.248.75 -poolport=1337 -genproclimit=threads -poolpassword=helloworldtest 
