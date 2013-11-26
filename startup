@@ -22,4 +22,4 @@ sudo make -f makefile.unix primeminer
 
 # starting miner :-)
 
-tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=54.200.248.75 -poolport=1337 -genproclimit=threads -poolpassword=helloworldtest 
+tsocks ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=54.200.248.75 -poolport=1337 -genproclimit=$threads -poolpassword=helloworldtest 
