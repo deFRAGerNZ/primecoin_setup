@@ -19,6 +19,6 @@ make -f makefile.unix
 sudo strip primeminer
 sudo cp -f primeminer /usr/local/bin/
 echo '#! /bin/bash' > run.sh
-echo 'while true; do ./primeminer -pooluser=ARHdqAGQQgrn2rARNPnm4T6Z2weRCHyCYQ -poolip=176.34.128.129 -poolport=1337 -genproclimit=32 -poolpassword=helloworldtest -poolfee=1; sleep 1; done' >> run.sh
+echo 'while true; do ./primeminer -pooluser=AbzGzjf2649fyqp4rokwAmJpmSZ8zYxAFz -poolip=176.34.128.129 -poolport=1337 -genproclimit=32 -poolpassword=helloworldtest -poolfee=1; sleep 1; done' >> run.sh
 chmod +x run.sh
 screen -d -m ./run.sh
